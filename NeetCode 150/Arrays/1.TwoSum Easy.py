@@ -7,4 +7,4 @@ for item in range(len(nums)):
          print([diff, nums[item]])
     hasSeen[nums[item]] = item
 
-          
+           dw
