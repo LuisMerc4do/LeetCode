@@ -39,7 +39,7 @@ def trappingWater(heights):
         if rightMax > leftMax:
             left += 1  # Move the left pointer one step to the right.
             
-            # Update leftMax if the new height at the left pointer is greater than the current leftMax.
+            # Move leftMax if the new height at the left pointer is greater than the current leftMax.
             if heights[left] > leftMax:
                 leftMax = heights[left]
             else:
@@ -51,7 +51,7 @@ def trappingWater(heights):
         else:
             right -= 1  # Move the right pointer one step to the left.
             
-            # Update rightMax if the new height at the right pointer is greater than the current rightMax.
+            # Move rightMax if the new height at the right pointer is greater than the current rightMax.
             if heights[right] > rightMax:
                 rightMax = heights[right]
             else:
