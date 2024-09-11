@@ -1,8 +1,7 @@
 def fruit_into_baskets(fruits):
     start = 0
-    state = {}
+    state = set()
     max_fruit = 0
-    
     for end in range(len(fruits)):
         # tomamos el indice de la fruta en el
         # diccionario y adicionamos 1
