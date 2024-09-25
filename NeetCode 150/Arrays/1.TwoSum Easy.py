@@ -1,12 +1,13 @@
-nums = [2,7,11,15]
-target = 9
-left = 0
-right = len(nums) - 1
-while left < right:
-     sum = nums[left] + nums[right]
-     if sum == target:
-          print("true")
-     if sum < target:
-          left += 1
-     else:
-          right -= 1
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        hasSeen = {}
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in hasSeen: 
+                return [hasSeen[diff], i]
+            hasSeen[nums[i]] = i
