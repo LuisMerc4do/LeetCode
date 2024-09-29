@@ -10,3 +10,4 @@ class Solution:
             return left + right + root.val
         dfs(root)
         return self.count
+# test
